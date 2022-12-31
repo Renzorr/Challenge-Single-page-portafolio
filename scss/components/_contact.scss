@@ -1,4 +1,5 @@
 @use "../variables/variables" as v;
+@use "../mixin/btn" as m;
 
 .contact {
   display: flex;
@@ -25,15 +26,6 @@
   }
 
   .contact_btn {
-    font-weight: 600;
-    color: v.$white;
-    background-color: v.$dark-orange;
-    border-radius: 30px;
-    padding: 17px 46px;
-    transition: 0.5s;
-
-    &:hover {
-      background-color: v.$light-orange;
-    }
+    @include m.button(v.$dark-orange, v.$light-orange, v.$white);
   }
 }

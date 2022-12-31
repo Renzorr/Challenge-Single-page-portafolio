@@ -3,6 +3,9 @@
 .cursor_dot {
   width: 20px;
   height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: v.$cursor;
   position: fixed;
   top: 0;
@@ -11,4 +14,18 @@
   border-radius: 50%;
   z-index: 999;
   pointer-events: none;
+}
+
+.cursor_dot.disabled {
+  display: none;
+}
+
+#icon {
+  font-size: 6px;
+  color: v.$white;
+  opacity: 0;
+}
+
+#icon.active {
+  opacity: 1;
 }

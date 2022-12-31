@@ -1,0 +1,19 @@
+@mixin button($bg, $bg-hv, $text) {
+  background-color: $bg;
+  color: $text;
+  font-weight: bold;
+  padding: 18px 48px;
+  border-radius: 30px;
+  transition: 0.5s;
+
+  &:hover {
+    background-color: $bg-hv;
+  }
+
+  @media (max-width: 800px) {
+    & {
+      font-size: 13px;
+      padding: 18px 25px;
+    }
+  }
+}

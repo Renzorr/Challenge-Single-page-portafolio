@@ -1,4 +1,5 @@
 @use "../variables/variables" as v;
+@use "../mixin/btn" as m;
 
 .header {
   display: flex;
@@ -7,15 +8,6 @@
   padding-block: 47px 65px;
 
   .header_btn {
-    background-color: v.$black;
-    color: v.$white;
-    font-weight: bold;
-    padding: 18px 48px;
-    border-radius: 30px;
-    transition: 0.5s;
-
-    &:hover{
-        background-color: v.$purple;
-    }
+    @include m.button(v.$black, v.$purple, v.$white);
   }
 }
