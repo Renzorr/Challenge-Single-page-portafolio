@@ -1,0 +1,14 @@
+@use "../variables/variables" as v;
+
+.cursor_dot {
+  width: 20px;
+  height: 20px;
+  background: v.$cursor;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 999;
+  pointer-events: none;
+}

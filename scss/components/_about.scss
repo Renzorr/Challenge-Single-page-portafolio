@@ -1,0 +1,42 @@
+@use "../variables/variables" as v;
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin-bottom: 80px;
+
+  picture {
+    width: 78%;
+  }
+
+  .about_content {
+    transform: translateY(-11px);
+
+    .about_title {
+      font-size: 40px;
+      padding-bottom: 30px;
+    }
+
+    .about_info {
+      font-size: 18px;
+      font-weight: 500;
+      opacity: 0.6;
+      line-height: 28px;
+      padding-bottom: 50px;
+    }
+
+    .about_btn {
+      font-weight: 600;
+      background-color: v.$dark-orange;
+      color: v.$white;
+      padding: 17px 46px;
+      border-radius: 30px;
+      transition: 0.5s;
+
+      &:hover {
+        background-color: v.$light-orange;
+      }
+    }
+  }
+}

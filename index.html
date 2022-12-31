@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <!-- swiper css -->
+    <link rel="stylesheet" href="/css/swiper-bundle.min.css" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- style -->
+    <link rel="stylesheet" href="/css/main.css" />
+    <title>Frontend Mentor | Single-page-portafolio</title>
+  </head>
+  <body>
+    <div class="cursor_dot"></div>
+    <div class="cursor_outline"></div>
+
+    <header class="container header">
+      <picture class="header_img"
+        ><img src="/images/logo.svg" alt="logo" />
+      </picture>
+      <a href="#" class="header_btn">Free Consultation</a>
+    </header>
+
+    <main class="container hero">
+      <h1 class="hero_title">Design solutions made easy</h1>
+      <p class="hero_content">
+        With over ten years of experience in various design disciplines, I'm
+        your one-stop shop for your design needs.
+      </p>
+
+      <div class="hero_features">
+        <div class="feature_card">
+          <img
+            src="/images/pattern-graphic-design.svg"
+            alt=""
+            aria-hidden="true"
+          />
+          <span>Graphic Design</span>
+        </div>
+
+        <div class="feature_card">
+          <img src="/images/pattern-ui-ux.svg" alt="" aria-hidden="true" />
+          <span>UI/UX</span>
+        </div>
+
+        <div class="feature_card">
+          <img src="/images/pattern-apps.svg" alt="" aria-hidden="true" />
+          <span>Apps</span>
+        </div>
+
+        <div class="feature_card">
+          <img
+            src="/images/pattern-photography.svg"
+            alt=""
+            aria-hidden="true"
+          />
+          <span>Photography</span>
+        </div>
+
+        <div class="feature_card">
+          <img
+            src="/images/pattern-illustrations.svg"
+            alt=""
+            aria-hidden="true"
+          />
+          <span>Illustrations</span>
+        </div>
+
+        <div class="feature_card">
+          <img
+            src="/images/pattern-motion-graphics.svg"
+            alt=""
+            aria-hidden="true"
+          />
+          <span>Motion Graphic</span>
+        </div>
+      </div>
+    </main>
+
+    <section class="container about">
+      <picture class="about_img"
+        ><img src="images/image-amy.webp" alt="amy"
+      /></picture>
+      <div class="about_content">
+        <h2 class="about_title">
+          I'm Amy, and I'd love to work on your next project
+        </h2>
+        <p class="about_info">
+          I love working with others to create beautiful design solutions. I've
+          designed everything from brand illustrations to complete mobile apps.
+          I'm also handy with a camera!
+        </p>
+        <a href="#" class="about_btn">Free Consultation</a>
+      </div>
+    </section>
+
+    <section class="work">
+      <h2 class="work_title">My Work</h2>
+      <div class="work_slider_swiper swiper">
+        <div class="work_slider_carrousel swiper-wrapper">
+          <div class="work_slider swiper-slide">
+            <img src="images/image-slide-1.jpg" alt="slide 1" />
+          </div>
+          <div class="work_slider swiper-slide">
+            <img src="images/image-slide-2.jpg" alt="slide 2" />
+          </div>
+          <div class="work_slider swiper-slide">
+            <img src="images/image-slide-3.jpg" alt="slide 3" />
+          </div>
+          <div class="work_slider swiper-slide">
+            <img src="images/image-slide-4.jpg" alt="slide 4" />
+          </div>
+          <div class="work_slider swiper-slide">
+            <img src="images/image-slide-5.jpg" alt="slide 5" />
+          </div>
+        </div>
+      </div>
+      <div class="work_controls">
+        <button class="control_btn work_control_prev">
+          <img src="images/icon-arrow-left.svg" alt="prev button" />
+        </button>
+        <button class="control_btn work_control_next">
+          <img src="images/icon-arrow-right.svg" alt="next button" />
+        </button>
+      </div>
+    </section>
+
+    <section class="container contact">
+      <div class="contact_content">
+        <h2 class="contact_content_title">Book a call with me</h2>
+        <p class="contact_content_info">
+          I'd love to have a chat to see how I can help you. The best first step
+          is for us to discuss your project during a free consultation. Then we
+          can move forward from there.
+        </p>
+      </div>
+      <a href="#" class="contact_btn">Free Consultation</a>
+    </section>
+
+    <footer class="container footer">
+      <picture class="footer_img"
+        ><img src="/images/logo.svg" alt="logo icon"
+      /></picture>
+      <a href="#" class="footer_btn">Free Consultation</a>
+    </footer>
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/cursor.js"></script>
+  </body>
+</html>

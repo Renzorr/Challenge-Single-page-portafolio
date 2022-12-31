@@ -1,0 +1,12 @@
+@use "../variables/variables" as v;
+
+body {
+  padding-inline: 20px;
+
+  background-color: v.$body-bg;
+}
+
+.container {
+  max-width: 1150px;
+  margin: 0 auto;
+}

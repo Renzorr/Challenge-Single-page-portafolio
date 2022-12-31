@@ -1,0 +1,21 @@
+@use "../variables/variables" as v;
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 50px;
+
+  .footer_btn {
+    background-color: v.$black;
+    color: v.$white;
+    font-weight: bold;
+    padding: 18px 46px;
+    border-radius: 30px;
+    transition: 0.5s;
+
+    &:hover {
+      background-color: v.$purple;
+    }
+  }
+}

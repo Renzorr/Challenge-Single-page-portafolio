@@ -1,0 +1,51 @@
+@use "../variables/variables" as v;
+
+.work {
+  text-align: center;
+
+  .work_title {
+    font-size: 33px;
+    color: v.$black;
+    padding-bottom: 56px;
+  }
+
+  .work_slider_swiper {
+    width: 100%;
+  }
+
+  .work_slider_carrousel {
+    margin-bottom: 60px;
+
+    img {
+      border-radius: 10px;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .work_slider {
+    width: 570px !important;
+    height: 400px !important;
+  }
+
+  .work_controls {
+    .control_btn {
+      width: 65px;
+      height: 65px;
+      border-radius: 50%;
+      color: v.$white;
+      background-color: v.$black;
+      cursor: pointer;
+      transition: 0.5s;
+
+      &:hover {
+        background-color: v.$purple;
+      }
+    }
+
+    .work_control_next {
+      margin-left: 12px;
+    }
+  }
+}
